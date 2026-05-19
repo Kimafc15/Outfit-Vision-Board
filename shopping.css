@@ -11,8 +11,14 @@
 }
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 }
 body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
   margin: 0;
   font-family:
     Inter,
