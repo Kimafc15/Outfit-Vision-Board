@@ -1,0 +1,126 @@
+:root {
+  --ink: #312742;
+  --muted: #746a84;
+  --lav: #9b7ad6;
+  --lav-soft: #f7f1ff;
+  --blue: #82b8ee;
+  --blue-soft: #eef7ff;
+  --gold: #d8b86a;
+  --line: #ddd1ef;
+  --paper: rgba(255, 255, 255, 0.86);
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(
+      circle at 12% 4%,
+      rgba(190, 160, 235, 0.45),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 85% 0%,
+      rgba(154, 207, 255, 0.38),
+      transparent 32%
+    ),
+    linear-gradient(135deg, #ffffff 0%, #fbf8ff 45%, #eef7ff 100%);
+  line-height: 1.55;
+}
+header {
+  padding: 56px 24px 28px;
+  max-width: 1180px;
+  margin: auto;
+}
+h1 {
+  font-size: 80px;
+  line-height: 0.95;
+  margin: 0 0 18px;
+  letter-spacing: -0.06em;
+  background: linear-gradient(
+    105deg,
+    #7a52be 10%,
+    #9b7ad6 10%,
+    #82b8ee 70%,
+    #d8b86a
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+h2 {
+  font-size: clamp(1.5rem, 2.4vw, 2.4rem);
+  margin: 40px 0 16px;
+  letter-spacing: -0.03em;
+}
+h3 {
+  margin: 0 0 10px;
+  letter-spacing: -0.02em;
+  font-size: 1.08rem;
+}
+p {
+  margin: 0 0 12px;
+}
+a {
+  color: var(--ice);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(219, 234, 254, 0.45);
+}
+a:hover {
+  color: white;
+  border-color: white;
+}
+.lede {
+  font-size: 1.28rem;
+  max-width: 920px;
+  color: var(--muted);
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+.nav a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #4f3e6d;
+}
+main {
+  max-width: 1180px;
+  margin: auto;
+  padding: 0 24px 56px;
+}
+
+
+
+@media print {
+  body {
+    background: white;
+    color: #111;
+  }
+  .card,
+  .note {
+    break-inside: avoid;
+    border-color: #ddd;
+    background: white;
+    box-shadow: none;
+  }
+  a {
+    color: #111;
+  }
+  .section-head {
+    position: static;
+    background: white;
+  }
+}
